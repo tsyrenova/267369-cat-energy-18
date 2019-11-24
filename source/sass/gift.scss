@@ -1,0 +1,7 @@
+.gift {
+  background-color: $wepeep;;
+}
+.gift__text {
+  @include font-main (16px, 20px);
+  color: $white;
+}

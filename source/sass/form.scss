@@ -1,0 +1,58 @@
+.form__fieldset {
+  @include fieldset-reset;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__label {
+  @include font-title (16px, 18px);
+  color: $mine-shaft;
+  text-align: left;
+}
+
+.form__input {
+  @include input-placeholder;
+  @include font-title (16px, 18px);
+  color: $tundora;
+  text-align: left;
+  border: 1px solid $color-border-input;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border: 1px solid $color-border-input;
+}
+
+.form__input:active {
+  border: 2px solid $tundora;
+}
+
+.form__input:error {
+  border: 2px solid $color-border-input-error;
+}
+
+.form__textarea {
+  @include input-placeholder;
+  @include font-title (16px, 18px);
+}
+
+.form__legend {
+  @include font-title (24px, 24px);
+  text-align: left;
+  text-transform: none;
+}
+
+.form__button {
+  @include font-title (16px, 20px);
+  color: $white;
+}
+
+.page-main__necessarily {
+  @include font-main (14px, 16px);
+}
+
+.form__input + .form__label:active {
+  color: $black-two-30;
+}

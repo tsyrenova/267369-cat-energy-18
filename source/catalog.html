@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин CAT ENERGY</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,9 @@
         alt="Интернет магазин CAT ENERGY">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visual-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a class="site-list__item-link" href="index.html">Главная</a></li>
@@ -25,7 +28,7 @@
   </header>
 
   <main class="page-main">
-    <h1 class=" page-main__title">Каталог продукции</h1>
+    <h1 class="page-main__title page-main__title--black">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visual-hidden">Заказ товаров</h2>
       <ul class="catalog__list">
@@ -171,7 +174,7 @@
               <td class="products__description products__description--right">500 Р.</td>
             </tr>
           </table>
-          <a class="products__link button-green" href="#">Заказать</a>
+          <a class="products__button button-green" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -179,7 +182,7 @@
     <section class="more-products">
       <h2 class="more-products__title">Показать еще 100500 товаров</h2>
       <p class="more-products__text">На самом деле вкусов гораздо больше!</p>
-      <a class="more-products__button" href="#">Показать все</a>
+      <a class="more-products__button button-gray" href="#">Показать все</a>
     </section>
 
     <section class="additional-products">
@@ -188,34 +191,34 @@
         <li class="additional-products__item">
           <p class="additional-products__title">Сахарозаменитель</p>
           <div class="additional-products__wrapper">
-            <span class="additional-products__description additional-products__description--right">1 упаковка (100
+            <span class="additional-products__description additional-products__description--left">1 упаковка (100
               г)</span>
-            <span class="additional-products__description additional-products__description--left">200 Р.</span>
+            <span class="additional-products__description additional-products__description--right">200 Р.</span>
           </div>
           <a class="additional-products__button button-green" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
           <p class="additional-products__title">Питьевая вода</p>
           <div class="additional-products__wrapper">
-            <span class="additional-products__description additional-products__description--right">5 литров</span>
-            <span class="additional-products__description additional-products__description--left">50 Р.</span>
+            <span class="additional-products__description additional-products__description--left">5 литров</span>
+            <span class="additional-products__description additional-products__description--right">50 Р.</span>
           </div>
           <a class="additional-products__button button-green" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
           <p class="additional-products__title">Молоко</p>
           <div class="additional-products__wrapper">
-            <span class="additional-products__description additional-products__description--right">1 литр</span>
-            <span class="additional-products__description additional-products__description--left">100 Р.</span>
+            <span class="additional-products__description additional-products__description--left">1 литр</span>
+            <span class="additional-products__description additional-products__description--right">100 Р.</span>
           </div>
           <a class="additional-products__button button-green" href="#">Заказать</a>
         </li>
         <li class="additional-products__item">
           <p class="additional-products__title">Витамины</p>
           <div class="additional-products__wrapper">
-            <span class="additional-products__description additional-products__description--right">1 упаковка (30
+            <span class="additional-products__description additional-products__description--left">1 упаковка (30
               г)</span>
-            <span class="additional-products__description additional-products__description--left">300 Р.</span>
+            <span class="additional-products__description additional-products__description--right">300 Р.</span>
           </div>
           <a class="additional-products__button button-green" href="#">Заказать</a>
         </li>

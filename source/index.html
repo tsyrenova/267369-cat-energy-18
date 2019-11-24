@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин CAT ENERGY</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,9 @@
         alt="Интернет магазин CAT ENERGY">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visual-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active"><a class="site-list__item-link">Главная</a></li>
@@ -30,7 +33,7 @@
       <h2 class="visual-hidden">Подбор программы</h2>
       <p class="care-cat__title">Занялся собой? Займись котом!</p>
       <img class="care-cat__food-image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Еда">
-      <a class="care-cat__button" href="form.html">Подобрать программу</a>
+      <a class="care-cat__button button-green" href="form.html">Подобрать программу</a>
     </section>
 
     <section class="program">
@@ -52,7 +55,7 @@
     </section>
 
     <section class="advantages">
-      <h2 class="visual-hidden">Преимущества</h2>
+      <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--benefit">Функциональное питание содержит только полезные
           питательные вещества.</li>
@@ -131,9 +134,7 @@
 
     <section class="developer">
       <h2 class="visual-hidden">Разработчик сайта</h2>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visual-hidden">HTML Academy</span>
-      </a>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy      </a>
       <a class="developer___link" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="developer__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
           alt="Логотип HTML Academy">

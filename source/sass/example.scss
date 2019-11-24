@@ -1,0 +1,34 @@
+.example {
+  background-color: $light-grey;
+}
+
+.example__title {
+  @include font-title (36px, 60px);
+  text-transform: none;
+  text-align: left;
+}
+
+.example__list {
+  @include list-reset;
+}
+.example__text {
+  @include font-main (14px, 18px);
+  text-align: left;
+}
+
+.example__results {
+  @include font-title (24px, 24px);
+}
+
+.example__description {
+  @include font-main (12px, 12px)
+}
+
+.example__expenses {
+  @include font-title (14px, 20px);
+}
+
+.example__button {
+  @include font-main (16px, 20px);
+
+}

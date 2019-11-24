@@ -1,0 +1,29 @@
+.program__list {
+  @include list-reset;
+}
+.program__item {
+  background-color: $light-grey;
+}
+
+.program__item-title {
+  @include font-title (24px, 37px);
+  text-align: left;
+}
+
+.program__item-description {
+  @include font-main (14px, 18px);
+  text-align: left;
+}
+.program__item-link {
+  @include font-title (16px, 16px);
+  text-align: left;
+}
+
+.program__item-link:hover,
+.program__item-link:focus {
+    color: $cod-gray;
+}
+
+.program__item-link:active {
+    color: $black-three-30;
+}

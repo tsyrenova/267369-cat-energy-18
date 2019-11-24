@@ -1,0 +1,14 @@
+.developer__link {
+  @include font-main (16px, 16px);
+  color: $tundora;
+  text-align: left;
+}
+
+.developer__link:hover,
+.developer__link:focus {
+    color: $tundora;
+}
+
+.developer__link:active {
+    color: $greyish-brown-30;
+}

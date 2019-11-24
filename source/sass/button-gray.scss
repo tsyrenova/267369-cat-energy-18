@@ -1,0 +1,15 @@
+.button-gray {
+  @include button-reset;
+  @include font-title (16px, 20px);
+  background-color: $light-grey;
+}
+
+.button-gray:hover,
+.button-gray:focus {
+  background-color: $white-three;
+}
+
+.button-gray:active {
+  color: $greyish-brown-30;
+  background-color: $white-three;
+}

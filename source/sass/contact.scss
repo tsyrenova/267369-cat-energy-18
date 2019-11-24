@@ -1,0 +1,14 @@
+.contact__title {
+  @include font-title (16px, 20px);
+  text-align: left;
+}
+
+.contact__adress {
+  @include font-main (14px, 20px);
+  text-align: left;
+  text-transform: none;
+}
+
+.contact {
+  background-color: $white;
+}
