@@ -1,6 +1,6 @@
 .button-gray {
   @include button-reset;
-  @include font-title (16px, 20px);
+  @include font-title(16px, 20px);
   background-color: $light-grey;
 }
 

@@ -21,11 +21,10 @@
 
 $title-font: "Oswald", sans-serif;
 $main-font: "Arial", sans-serif;
-
-$cod-gray: #111;
-$mine-shaft: #222;
-$tundora: #444;
-$white: #fff;
+$cod-gray: #111111;
+$mine-shaft: #222222;
+$tundora: #444444;
+$white: #ffffff;
 $apple: #68b738;
 $grass: #5eaa2f;
 $wepeep: #f0c7e0;
@@ -69,9 +68,9 @@ $black-two-30: rgba(34, 34, 34, 0.3);
 }
 
 @mixin list-reset {
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 @mixin fieldset-reset {
@@ -80,23 +79,23 @@ $black-two-30: rgba(34, 34, 34, 0.3);
   padding: 0;
 }
 
-@mixin input-placeholder {
-  &.placeholder {
-    @content;
-  }
-  &:-moz-placeholder {
-    @content;
-  }
-  &::-moz-placeholder {
-    @content;
-  }
-  &:-ms-input-placeholder {
-    @content;
-  }
-  &::-webkit-input-placeholder {
-    @content;
-  }
-}
+// @mixin input-placeholder {
+//   &.placeholder {
+//     @content;
+//   }
+//   &:-moz-placeholder {
+//     @content;
+//   }
+//   &::-moz-placeholder {
+//     @content;
+//   }
+//   &:-ms-input-placeholder {
+//     @content;
+//   }
+//   &::-webkit-input-placeholder {
+//     @content;
+//   }
+// }
 
 @import "site-list.scss";
 @import "page-main.scss";

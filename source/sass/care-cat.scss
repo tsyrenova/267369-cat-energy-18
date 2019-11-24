@@ -3,10 +3,10 @@
 }
 
 .care-cat__title {
-  @include font-title (14px, 14px);
+  @include font-title(14px, 14px);
   color: #ffffff;
 }
 
 .care-cat__button {
-  @include font-title (14px, 18px);
+  @include font-title(14px, 18px);
 }

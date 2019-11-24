@@ -3,15 +3,15 @@
 }
 
 .site-list__item-link {
-  @include font-title (20px, 20px);
+  @include font-title(20px, 20px);
   font-weight: 500;
 }
 
 .site-list__item-link:hover,
 .site-list__item-link:focus {
-    color: $black-three-60;
+  color: $black-three-60;
 }
 
 .site-list__item-link:active {
-    color: $black-three-30;
+  color: $black-three-30;
 }

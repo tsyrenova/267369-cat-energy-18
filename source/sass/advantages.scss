@@ -1,12 +1,13 @@
 .advantages__title {
-  @include font-title (36px, 60px);
+  @include font-title(36px, 60px);
   text-align: left;
 }
+
 .advantages__list {
   @include list-reset;
 }
 
 .advantages__item {
-  @include font-main (14px, 18px);
+  @include font-main(14px, 18px);
   text-align: left;
 }
