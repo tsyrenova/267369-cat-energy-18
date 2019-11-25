@@ -13,7 +13,6 @@
 }
 
 .form__input {
-  // @include input-placeholder;
   @include font-title(16px, 18px);
   color: $tundora;
   text-align: left;
@@ -34,7 +33,6 @@
 }
 
 .form__textarea {
-  // @include input-placeholder;
   @include font-title(16px, 18px);
 }
 
@@ -55,4 +53,9 @@
 
 .form__input + .form__label:active {
   color: $black-two-30;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: $tundora;
 }

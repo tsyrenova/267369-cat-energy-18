@@ -1,5 +1,6 @@
 .advantages__title {
   @include font-title(36px, 60px);
+  text-transform: none;
   text-align: left;
 }
 

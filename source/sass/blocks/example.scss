@@ -30,5 +30,5 @@
 }
 
 .example__button {
-  @include font-main(16px, 20px);
+  @include font-title(16px, 20px);
 }
