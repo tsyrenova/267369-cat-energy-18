@@ -1,0 +1,16 @@
+.button-green {
+  @include button-reset;
+  color: #ffffff;
+
+  background-color: $apple;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: $grass;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $grass;
+}

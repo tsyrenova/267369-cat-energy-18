@@ -1,0 +1,12 @@
+.care-cat {
+  background-color: $apple;
+}
+
+.care-cat__title {
+  @include font-title(14px, 14px);
+  color: #ffffff;
+}
+
+.care-cat__button {
+  @include font-title(14px, 18px);
+}

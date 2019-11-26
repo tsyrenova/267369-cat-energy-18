@@ -1,0 +1,30 @@
+.additional-products__title {
+  @include font-title(16px, 16px);
+  color: $mine-shaft;
+  text-align: left;
+}
+
+.additional-products__title--extra {
+  @include font-title(24px, 24px);
+  text-align: left;
+  text-transform: none;
+}
+
+.additional-products__list {
+  @include list-reset;
+}
+
+.additional-products__description--left {
+  @include font-main(14px, 14px);
+  text-align: right;
+}
+
+.additional-products__description--right {
+  @include font-main(14px, 14px);
+  text-align: left;
+}
+
+.additional-products__button {
+  @include font-title(14px, 18px);
+  color: $white;
+}
