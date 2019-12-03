@@ -1,8 +1,11 @@
 .page-main__title {
+  @include drop-reset;
   @include font-title(36px, 36px);
   color: #ffffff;
   text-transform: none;
+}
 
+.page-main__title--white {
   background-color: $apple;
 }
 
@@ -15,4 +18,14 @@
 .page-main__profile {
   @include font-title(14px, 18px);
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $cod-gray;
+    background-color: $white;
+    width: 414px;
+  }
 }
