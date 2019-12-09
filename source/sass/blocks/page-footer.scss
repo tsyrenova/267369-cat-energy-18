@@ -1,11 +1,7 @@
 .page-footer {
   min-height: 400px; //временно
-
+  background-color: $light-grey;
   outline: 1px solid lightcoral;
-}
-
-.contact__title {
-  @include drop-reset;
 }
 
 .page-footer__wrapper {
@@ -20,32 +16,6 @@
   min-height: 94px; //временно
 }
 
-.social-container {
-  outline: 1px solid #4c00ff;
-}
-
-.social-wrapper {
-  min-height: 62px; //временно
-}
-
-.developer {
-  display: flex;
-  justify-content: space-between;
-  min-height: 78px;
-}
-
-.social-wrapper__list {
-  @include list-reset;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-wrapper__item {
-  width: 22px; //временно
-  height: 17px;
-  background-color: salmon;
-}
-
 @media (min-width: $tablet-width) {
   .page-footer {
     min-height: 747px;
@@ -53,36 +23,13 @@
 
   .page-footer__wrapper {
     min-height: 201px; //временно
-  }
-
-  .contact__title {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .contact__adress {
-    font-size: 16px;
-  }
-
-  .contact__wrapper-map {
-    min-height: 400px; //временно
     background-color: $light-grey;
-  }
-
-  .social-container {
-    min-height: 150px; //временно
-    display: flex;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contact {
-    position: relative;
-  }
-
-  .contact__title {
-    align-items: left;
+  .page-footer {
+    min-height: 550px;
   }
 
   .page-footer__wrapper {
@@ -95,4 +42,5 @@
 
     background-color: $white;
   }
+
 }

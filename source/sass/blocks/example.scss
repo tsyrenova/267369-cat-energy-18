@@ -1,10 +1,11 @@
 .example {
   min-height: 705px;
+  background-color: $light-grey;
+
   outline: 1px solid orangered;
 }
 
 .example .container {
-  background-color: $light-grey;
   outline: 1px solid orchid;
 }
 

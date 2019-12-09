@@ -40,12 +40,19 @@
   }
 
   .care-cat__image {
+    width: 552px;
+    height: 449px;
+    background-color: brown;
+  }
+
+  .care-cat__image:before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: -1;
     width: 720px;
     height: 696px;
     background-color: $apple;
+    top: 0;
+    left: 50%;
+    z-index: -1;
   }
 }

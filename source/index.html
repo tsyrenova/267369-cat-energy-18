@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
   <title>Интернет магазин CAT ENERGY</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -20,9 +20,12 @@
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__item-link">Главная</a></li>
-        <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог продукции</a></li>
-        <li class="site-list__item"><a class="site-list__item-link" href="form.html">Подбор программы</a></li>
+        <li class="site-list__item site-list__item--active"><a
+            class="site-list__item-link site-list__item-link--color">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--color"
+            href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--color" href="form.html">Подбор
+            программы</a></li>
       </ul>
     </nav>
   </header>
@@ -31,12 +34,14 @@
     <div class="container">
       <h1 class="page-main__title page-main__title--white">Функциональное питание для котов</h1>
     </div>
-    <section class="care-cat container">
-      <h2 class="visual-hidden">Подбор программы</h2>
-      <p class="care-cat__title">Занялся собой? Займись котом!</p>
-      <!-- <img class="care-cat__food-image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Еда"> -->
-      <div class="care-cat__image"></div>
-      <a class="care-cat__button button-green" href="form.html">Подобрать программу</a>
+    <section class="care-cat">
+      <div class="care-cat__wrapper container">
+        <h2 class="visual-hidden">Подбор программы</h2>
+        <p class="care-cat__title">Занялся собой? Займись котом!</p>
+        <!-- <img class="care-cat__food-image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Еда"> -->
+        <div class="care-cat__image"></div>
+        <a class="care-cat__button button-green" href="form.html">Подобрать программу</a>
+      </div>
     </section>
 
     <section class="program container">
@@ -111,11 +116,13 @@
   </main>
 
   <footer class="page-footer">
-    <section class="contact">
+    <section class="contact contact--color">
       <h2 class="visual-hidden">Контакты</h2>
-      <div class="page-footer__wrapper container">
-        <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__wrapper">
+        <div class="container">
+          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
 
       <div class="contact__wrapper-map">
