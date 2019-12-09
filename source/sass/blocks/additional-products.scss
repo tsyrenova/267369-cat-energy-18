@@ -22,6 +22,7 @@
   color: $mine-shaft;
   text-align: left;
 }
+
 .additional-products__item {
   flex-grow: 1;
   width: 280px;
@@ -29,10 +30,10 @@
 }
 
 .additional-products__title--extra {
-  width: 226px;
   @include font-title(24px, 24px);
   text-align: left;
   text-transform: none;
+  width: 226px;
 }
 
 .additional-products__description {

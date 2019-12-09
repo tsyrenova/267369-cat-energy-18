@@ -45,7 +45,7 @@
     background-color: brown;
   }
 
-  .care-cat__image:before {
+  .care-cat__image::before {
     content: "";
     position: absolute;
     width: 720px;
