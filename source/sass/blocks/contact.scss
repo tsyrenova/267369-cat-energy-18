@@ -1,4 +1,13 @@
+.contact {
+  background-color: $light-grey;
+}
+
+.contact--color {
+  background-color: $white;
+}
+
 .contact__title {
+  @include drop-reset;
   @include font-title(16px, 20px);
   text-align: left;
 }
@@ -9,10 +18,32 @@
   text-transform: none;
 }
 
-.contact {
-  background-color: $white;
-}
-
 .contact__wrapper-map {
   background-color: $background-map;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contact__adress {
+    font-size: 16px;
+  }
+
+  .contact__wrapper-map {
+    min-height: 400px; //временно
+    background-color: $light-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact .container {
+    position: relative;
+  }
+
+  .contact__title {
+    align-items: left;
+  }
 }

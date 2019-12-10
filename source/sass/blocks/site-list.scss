@@ -1,5 +1,10 @@
 .site-list {
   @include list-reset;
+  text-align: center;
+}
+
+.site-list__item {
+  min-height: 65px;
 }
 
 .site-list__item-link {
@@ -14,4 +19,24 @@
 
 .site-list__item-link:active {
   color: $black-three-30;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-list__item-link {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item-link--color {
+    font-size: 20px;
+    color: $white;
+  }
 }

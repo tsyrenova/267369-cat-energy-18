@@ -1,8 +1,23 @@
 .example {
+  outline: 1px solid orangered;
+}
+
+.example__wrapper-title,
+.example__wrapper-description {
   background-color: $light-grey;
 }
 
+.example__wrapper-description.container {
+  width: auto;
+  padding: 0;
+}
+
+.example .container {
+  outline: 1px solid orchid;
+}
+
 .example__title {
+  @include drop-reset;
   @include font-title(36px, 60px);
   text-transform: none;
   text-align: left;
@@ -10,25 +25,122 @@
 
 .example__list {
   @include list-reset;
+  display: flex;
 }
 
 .example__text {
   @include font-main(14px, 18px);
+  @include drop-reset;
   text-align: left;
 }
 
 .example__results {
   @include font-title(24px, 24px);
+  @include drop-reset;
 }
 
 .example__description {
   @include font-main(12px, 12px);
+  @include drop-reset;
 }
 
 .example__expenses {
   @include font-title(14px, 20px);
+  @include drop-reset;
+}
+
+.example__wrapper-button {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__button {
   @include font-title(16px, 20px);
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    min-height: 619px;
+  }
+
+  .example__wrapper-title,
+  .example__wrapper-content {
+    background-color: $white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__results {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__expenses {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__wrapper-content .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__text {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background-color: $light-grey;
+  }
+
+  .example__wrapper-content {
+    background-color: transparent;
+  }
+
+  .example__wrapper-description.container {
+    width: $desktop-width;
+  }
+
+  .example__wrapper-description {
+    display: flex;
+  }
+
+  // .example__wrapper-content,
+  // .example__wrapper-toggle {
+  //   background-color: $light-grey;
+  // }
+
+  .example__wrapper-toggle .container {
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .example__wrapper-content .container {
+    width: auto;
+    padding: 0 40px;
+    min-height: 628px; //временно
+  }
+
+  .example-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

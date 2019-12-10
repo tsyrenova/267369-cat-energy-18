@@ -2,41 +2,49 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
   <title>Интернет магазин CAT ENERGY</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
-        alt="Интернет магазин CAT ENERGY">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+  <header class="page-header container">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
+          alt="Интернет магазин CAT ENERGY">
+      </a>
+      <button class="page-header__toggle" type="button">
         <span class="visual-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a class="site-list__item-link">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a class="site-list__item-link" href="form.html">Подбор программы</a></li>
-        </ul>
-      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a
+            class="site-list__item-link site-list__item-link--color">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--color"
+            href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a class="site-list__item-link site-list__item-link--color" href="form.html">Подбор
+            программы</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Функциональное питание для котов</h1>
+    <div class="container">
+      <h1 class="page-main__title page-main__title--white">Функциональное питание для котов</h1>
+    </div>
     <section class="care-cat">
-      <h2 class="visual-hidden">Подбор программы</h2>
-      <p class="care-cat__title">Занялся собой? Займись котом!</p>
-      <img class="care-cat__food-image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Еда">
-      <a class="care-cat__button button-green" href="form.html">Подобрать программу</a>
+      <div class="care-cat__wrapper container">
+        <h2 class="visual-hidden">Подбор программы</h2>
+        <p class="care-cat__title">Занялся собой? Займись котом!</p>
+        <!-- <img class="care-cat__food-image" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Еда"> -->
+        <div class="care-cat__image"></div>
+        <a class="care-cat__button button-green" href="form.html">Подобрать программу</a>
+      </div>
     </section>
 
-    <section class="program">
+    <section class="program container">
       <h2 class="visual-hidden">Программы</h2>
       <ul class="program__list">
         <li class="program__item">
@@ -54,7 +62,7 @@
       </ul>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--benefit">Функциональное питание содержит только полезные
@@ -69,79 +77,104 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
-      <ul class="example__list">
-        <li class="example__item">
-          <p class="example__results">5 кг</p>
-          <p class="example__description">снижение веса</p>
-        </li>
-        <li class="example__item">
-          <p class="example__results">60 дней</p>
-          <p class="example__description">затрачено времени</p>
-        </li>
-      </ul>
-      <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
-      <img class="example__cat" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Кот до и после">
-      <button class="example__button">Было</button>
-      <div class="example__toggle">
-        <div class="example__toggle-line">
-          <div class="example__toggle-line example__toggle-line--green"></div>
+      <div class="example__wrapper-title">
+        <div class="container">
+          <h2 class="example__title">Живой пример</h2>
         </div>
       </div>
-      <button class="example__button">Стало</button>
+      <div class="example__wrapper-description container">
+        <div class="example__wrapper-content">
+          <div class="container">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim.
+              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+              часов
+              в день.</p>
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__results">5 кг</p>
+                <p class="example__description">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__results">60 дней</p>
+                <p class="example__description">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
+          </div>
+        </div>
+        <div class="example__wrapper-toggle">
+          <div class="container">
+            <div class="example__wrapper-button">
+              <button class="example__button">Было</button>
+              <div class="example__toggle">
+                <div class="example__toggle-line">
+                  <div class="example__toggle-line example__toggle-line--green"></div>
+                </div>
+              </div>
+              <button class="example__button">Стало</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <section class="contact">
+    <section class="contact contact--color">
       <h2 class="visual-hidden">Контакты</h2>
-      <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contact__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+      </div>
+
       <div class="contact__wrapper-map">
-        <img class="contact__map" src="https://via.placeholder.com/320x400" width="320" height="400" alt="Карта">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575389625620!5m2!1sru!2sru"
+          width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section>
 
-    <section class="page-footer__logo">
-      <h2 class="visual-hidden">Логотип CAT ENERGY</h2>
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24"
-          alt="Логотип CAT ENERGY">
-      </a>
-    </section>
+    <div class="social-container container">
+      <section class="page-footer__logo">
+        <h2 class="visual-hidden">Логотип CAT ENERGY</h2>
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24"
+            alt="Логотип CAT ENERGY">
+        </a>
+      </section>
+      <section class="social-wrapper">
+        <h2 class="visual-hidden">Социальные сети</h2>
+        <ul class="social-wrapper__list">
+          <li class="social-wrapper__item">
+            <a class="social-wrapper__link" href="#">
+              <span class="visual-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-wrapper__item">
+            <a class="social-wrapper__link" href="#">
+              <span class="visual-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-wrapper__item">
+            <a class="social-wrapper__link" href="#">
+              <span class="visual-hidden">Фэйсбук</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="social-wrapper">
-      <h2 class="visual-hidden">Социальные сети</h2>
-      <ul class="social-wrapper__list">
-        <li class="social-wrapper__item">
-          <a class="social-wrapper__link" href="#">
-            <span class="visual-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-wrapper__item">
-          <a class="social-wrapper__link" href="#">
-            <span class="visual-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="social-wrapper__item">
-          <a class="social-wrapper__link" href="#">
-            <span class="visual-hidden">Фэйсбук</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="developer">
-      <h2 class="visual-hidden">Разработчик сайта</h2>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
-      <a class="developer___link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="developer__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
-          alt="Логотип HTML Academy">
-      </a>
-    </section>
+      <section class="developer">
+        <h2 class="visual-hidden">Разработчик сайта</h2>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy </a>
+        <a class="developer___link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developer__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+            alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </div>
   </footer>
 </body>
 

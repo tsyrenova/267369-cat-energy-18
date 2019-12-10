@@ -1,8 +1,21 @@
 .gift {
+  min-height: 289px;
+  width: 100%;
   background-color: $apple;
 }
 
 .gift__text {
   @include font-main(16px, 20px);
+  align-items: center;
   color: $white;
+  width: 159px;
+
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 289px;
+  }
 }

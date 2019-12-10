@@ -1,3 +1,44 @@
 .page-footer {
+  min-height: 400px; //временно
   background-color: $light-grey;
+  outline: 1px solid lightcoral;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  min-height: 114px; //временно
+  outline: 1px solid #4c00ff;
+}
+
+.page-footer__logo {
+  min-height: 94px; //временно
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 747px;
+  }
+
+  .page-footer__wrapper {
+    min-height: 201px; //временно
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    min-height: 550px;
+  }
+
+  .page-footer__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 570px;
+    min-height: 201px;
+
+    background-color: $white;
+  }
 }

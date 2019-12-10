@@ -1,12 +1,52 @@
 .care-cat {
+  min-height: 420px;
   background-color: $apple;
+  outline: 1px solid purple;
 }
 
 .care-cat__title {
   @include font-title(14px, 14px);
+  @include drop-reset;
   color: #ffffff;
 }
 
 .care-cat__button {
   @include font-title(14px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .care-cat {
+    min-height: 640px;
+    background-color: $white;
+  }
+
+  .care-cat__title {
+    font-size: 20px;
+    line-height: 20px;
+    color: $cod-gray;
+    text-align: left;
+  }
+
+  .care-cat__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .care-cat {
+    min-height: 466px;
+    background-color: transparent;
+  }
+
+  .care-cat__image::before {
+    content: "";
+    position: absolute;
+    width: 651px;
+    height: 696px;
+    background-color: $apple;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+  }
 }

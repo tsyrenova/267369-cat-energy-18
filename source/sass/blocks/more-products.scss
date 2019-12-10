@@ -1,5 +1,12 @@
+.more-products {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid purple;
+}
+
 .more-products__title {
   @include font-title(16px, 20px);
+  @include drop-reset;
 }
 
 .more-products__text {

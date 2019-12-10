@@ -1,0 +1,27 @@
+.social-container {
+  outline: 1px solid orangered;
+}
+
+.social-wrapper {
+  min-height: 62px; //временно
+}
+
+.social-wrapper__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-wrapper__item {
+  width: 22px; //временно
+  height: 17px;
+  background-color: salmon;
+}
+
+@media (min-width: $tablet-width) {
+  .social-container {
+    min-height: 150px; //временно
+    display: flex;
+    justify-content: space-between;
+  }
+}

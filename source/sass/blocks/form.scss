@@ -1,5 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid darkblue;
+}
+
 .form__fieldset {
   @include fieldset-reset;
+  outline: 1px solid red;
 }
 
 .form__list {
@@ -45,9 +52,10 @@
 .form__button {
   @include font-title(16px, 20px);
   color: $white;
+  width: 100%;
 }
 
-.page-main__necessarily {
+.form__text {
   @include font-main(14px, 16px);
 }
 
@@ -58,4 +66,73 @@
 .form__input::placeholder,
 .form__textarea::placeholder {
   color: $tundora;
+}
+
+@media (min-width: $tablet-width) {
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__text {
+    font-size: 16px;
+  }
+
+  .form__button {
+    font-size: 20px;
+  }
+
+  .form__list--additional {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-fieldset {
+    display: flex;
+  }
+
+  .form__list--contact {
+    display: flex;
+  }
+
+  .form__list--additional {
+    flex-wrap: nowrap;
+  }
+
+  .form__item {
+    width: auto;
+  }
+
+  .form__button {
+    width: 568px;
+  }
+
+  .form_wrapper-button {
+    display: flex;
+  }
+
+  .form__text {
+    width: 100%;
+  }
 }
