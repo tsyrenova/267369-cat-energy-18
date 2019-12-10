@@ -2,10 +2,6 @@
   background-color: $light-grey;
 }
 
-.contact .container {
-  background-color: transparent;
-}
-
 .contact--color {
   background-color: $white;
 }
@@ -43,7 +39,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contact {
+  .contact .container {
     position: relative;
   }
 

@@ -39,16 +39,10 @@
     background-color: transparent;
   }
 
-  .care-cat__image {
-    width: 552px;
-    height: 449px;
-    background-color: brown;
-  }
-
   .care-cat__image::before {
     content: "";
     position: absolute;
-    width: 720px;
+    width: 651px;
     height: 696px;
     background-color: $apple;
     top: 0;

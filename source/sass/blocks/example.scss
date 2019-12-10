@@ -1,8 +1,15 @@
 .example {
-  min-height: 705px;
-  background-color: $light-grey;
-
   outline: 1px solid orangered;
+}
+
+.example__wrapper-title,
+.example__wrapper-description {
+  background-color: $light-grey;
+}
+
+.example__wrapper-description.container {
+  width: auto;
+  padding: 0;
 }
 
 .example .container {
@@ -56,6 +63,11 @@
     min-height: 619px;
   }
 
+  .example__wrapper-title,
+  .example__wrapper-content {
+    background-color: $white;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
@@ -81,10 +93,6 @@
     line-height: 20px;
   }
 
-  .example .container {
-    background-color: $white;
-  }
-
   .example__wrapper-content .container {
     display: flex;
     flex-wrap: wrap;
@@ -96,16 +104,39 @@
     font-size: 16px;
     line-height: 24px;
   }
-
-  .example__wrapper-toggle .container {
-    background-color: $light-grey;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .example__wrapper-content .container {
-    min-height: 628px; //временно
+  .example {
     background-color: $light-grey;
+  }
+
+  .example__wrapper-content {
+    background-color: transparent;
+  }
+
+  .example__wrapper-description.container {
+    width: $desktop-width;
+  }
+
+  .example__wrapper-description {
+    display: flex;
+  }
+
+  // .example__wrapper-content,
+  // .example__wrapper-toggle {
+  //   background-color: $light-grey;
+  // }
+
+  .example__wrapper-toggle .container {
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .example__wrapper-content .container {
+    width: auto;
+    padding: 0 40px;
+    min-height: 628px; //временно
   }
 
   .example-container {
