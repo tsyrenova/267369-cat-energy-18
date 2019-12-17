@@ -1,5 +1,10 @@
-.page-main {
-  outline: 1px solid rebeccapurple;
+.page-main__wrapper--green {
+  height: 503px;
+  background-image: url(/img/index-can-mobile@1x.png), url(/img/index-background-mobile@1x.jpg),
+    linear-gradient(to bottom, $green 60.8%, $white 39.2%);
+  background-repeat: no-repeat;
+  background-position: center 167px, center 0, center 0;
+  background-size: 280px 270px, 320px 305px, 100% 100%;
 }
 
 .page-header__wrapper {
@@ -11,10 +16,12 @@
   @include font-title(36px, 36px);
   color: #ffffff;
   text-transform: none;
+  padding-top: 29px;
+  margin-bottom: 25px;
 }
 
 .page-main__title--white {
-  background-color: $apple;
+  // background-color: $apple;
 }
 
 .page-main__title--black {
@@ -30,18 +37,72 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    // padding-left: 86px;
+    margin-bottom: 7px;
+  }
+
+  .page-main__wrapper--green {
+    background-image: none;
+    height: auto;
+  }
+
+  .page-main__wrapper--green::before {
+    @include pseudo;
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-size: 709px 609px;
+    width: 709px;
+    height: 609px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: 20px;
+    right: 13px;
+  }
+
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $cod-gray;
     background-color: $white;
-    width: 435px;
+    width: 501px;
+    margin-bottom: 42px;
+    // padding-top: 63px;
+    padding-left: 87px;
+    background-color: transparent;
   }
 
   .page-main__profile {
     font-size: 20px;
     line-height: 30px;
     width: 325px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    @include drop-reset;
+    margin-bottom: 80px;
+  }
+
+  .page-main__wrapper .container {
+    padding-left: 119px;
+  }
+
+  .page-main__wrapper--green::before {
+    display: none;
+  }
+
+  .page-main__wrapper--green {
+    height: 598px;
+    background-image: linear-gradient(to left, $green 49.5%, white 49.5%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top left;
+  }
+
+  .page-main__title {
+    padding-top: 124px;
+    margin-bottom: 41px;
   }
 }

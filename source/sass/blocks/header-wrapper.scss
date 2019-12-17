@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .header-wrapper {
+    margin-bottom: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-wrapper {
+    background-image: linear-gradient(to left, $green 49.5%, white 49.5%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+}

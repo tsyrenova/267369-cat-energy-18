@@ -1,23 +1,26 @@
-.care-cat {
-  min-height: 420px;
-  background-color: $apple;
-  outline: 1px solid purple;
-}
+// .care-cat {
+//   outline: 1px solid purple;
+// }
 
 .care-cat__title {
   @include font-title(14px, 14px);
   @include drop-reset;
   color: #ffffff;
+  margin-bottom: 301px;
 }
 
 .care-cat__button {
-  @include font-title(14px, 18px);
+  display: block;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {
   .care-cat {
     min-height: 640px;
     background-color: $white;
+    background-color: transparent;
   }
 
   .care-cat__title {
@@ -25,9 +28,16 @@
     line-height: 20px;
     color: $cod-gray;
     text-align: left;
+    margin-bottom: 47px;
+    padding-left: 88px;
   }
 
   .care-cat__button {
+    width: 246px;
+    margin-left: 88px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -39,14 +49,11 @@
     background-color: transparent;
   }
 
-  .care-cat__image::before {
-    content: "";
-    position: absolute;
-    width: 651px;
-    height: 696px;
-    background-color: $apple;
-    top: 0;
-    left: 50%;
-    z-index: -1;
+  .care-cat__wrapper {
+    padding-left: 119px;
+  }
+
+  .care-cat__title {
+    margin-bottom: 53px;
   }
 }

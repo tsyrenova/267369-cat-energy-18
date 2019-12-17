@@ -2,11 +2,12 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "global-styles.scss";
+@import "blocks/header-wrapper.scss";
+@import "blocks/button-green.scss";
 @import "blocks/site-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/visual-hidden.scss";
 @import "blocks/care-cat.scss";
-@import "blocks/button-green.scss";
 @import "blocks/program.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
@@ -25,3 +26,4 @@
 // @import "blocks/outlines.scss";
 @import "blocks/products-wrapper.scss";
 @import "blocks/social-container.scss";
+@import "blocks/main-nav.scss";
