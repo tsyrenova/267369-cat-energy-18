@@ -1,7 +1,6 @@
 .page-main__wrapper--green {
   height: 503px;
-  background-image: url(/img/index-can-mobile@1x.png), url(/img/index-background-mobile@1x.jpg),
-    linear-gradient(to bottom, $green 60.8%, $white 39.2%);
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $green 60.8%, $white 39.2%);
   background-repeat: no-repeat;
   background-position: center 167px, center 0, center 0;
   background-size: 280px 270px, 320px 305px, 100% 100%;
@@ -28,12 +27,14 @@
   @include font-title(36px, 60px);
   text-transform: none;
   text-align: left;
+  padding-top: 16px;
 }
 
 .page-main__profile {
   @include font-title(14px, 18px);
   text-align: left;
   width: 226px;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +56,7 @@
     height: 609px;
     background-repeat: no-repeat;
     z-index: -1;
-    bottom: 20px;
+    bottom: -20px;
     right: 13px;
   }
 
@@ -64,45 +65,74 @@
     line-height: 60px;
     text-align: left;
     color: $cod-gray;
-    background-color: $white;
     width: 501px;
     margin-bottom: 42px;
-    // padding-top: 63px;
-    padding-left: 87px;
+    padding-top: 29px;
     background-color: transparent;
+    padding-left: 86px;
+  }
+
+  .page-main__title--catalog {
+    padding-left: 0;
+  }
+
+  .page-main__title--form {
+    padding-left: 0;
+    margin-bottom: 56px;
   }
 
   .page-main__profile {
     font-size: 20px;
     line-height: 30px;
-    width: 325px;
+    width: 364px;
+    padding-left: 40px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
     @include drop-reset;
-    margin-bottom: 80px;
+    margin-bottom: 71px;
   }
 
   .page-main__wrapper .container {
     padding-left: 119px;
   }
 
-  .page-main__wrapper--green::before {
-    display: none;
-  }
-
   .page-main__wrapper--green {
     height: 598px;
-    background-image: linear-gradient(to left, $green 49.5%, white 49.5%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top left;
+
+    &::before {
+      @include pseudo;
+      top: 142px;
+      left: 490px;
+      background-image: url("../img/index-can-desktop@1x.png");
+      background-size: 552px 499px;
+      background-repeat: no-repeat;
+      width: 552px;
+      height: 499px;
+      z-index: 1;
+    }
   }
 
   .page-main__title {
-    padding-top: 124px;
+    margin-bottom: 55px;
+    padding-left: 0;
+    padding-top: 36px;
+  }
+
+  .page-main__title--desktop {
+    padding-top: 114px;
     margin-bottom: 41px;
+  }
+
+  .page-main__title--catalog {
+    margin-bottom: 43px;
+  }
+
+  .page-main__profile {
+    padding-left: 0;
+    margin-bottom: 65px;
   }
 }

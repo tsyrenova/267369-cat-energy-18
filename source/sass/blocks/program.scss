@@ -23,7 +23,6 @@
   position: relative;
   margin-top: 9px;
   margin-bottom: 30px;
-  margin-left: 10px;
   margin-left: 71px;
 
   &::before {
@@ -40,7 +39,7 @@
 
 .program__item-title--slim::after {
   @include pseudo;
-  background-image: url(/img/icon-cat-slim.svg);
+  background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
   width: 35px;
   height: 49px;
@@ -50,7 +49,7 @@
 
 .program__item-title--pro::after {
   @include pseudo;
-  background-image: url(/img/icon-cat-pro.svg);
+  background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
   width: 67px;
   height: 28px;
@@ -76,7 +75,7 @@
 
 .program__item-link--slim::before {
   @include pseudo;
-  background-image: url(/img/icon-right-arrow-long.svg);
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 12px;
@@ -84,14 +83,32 @@
   left: 96px;
 }
 
+.program__item-link--slim:hover::before {
+  width: 34px;
+}
+
+.program__item-link--slim:active::before {
+  width: 34px;
+  opacity: 0.3;
+}
+
 .program__item-link--pro::before {
   @include pseudo;
-  background-image: url(/img/icon-right-arrow-long.svg);
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 12px;
   top: 8px;
   left: 94px;
+}
+
+.program__item-link--pro:hover::before {
+  width: 34px;
+}
+
+.program__item-link--pro:active::before {
+  width: 34px;
+  opacity: 0.3;
 }
 
 .program__item-link:hover,
@@ -180,17 +197,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program {
+    min-height: auto;
+  }
+
   .program__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 57px;
   }
 
   .program__item {
     width: 570px;
+    min-height: 372px;
     margin: 0;
-    padding: 0;
     padding: 0 50px;
   }
+
+  .program__item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
 
   .program__item-title {
     margin-left: 10px;
@@ -227,17 +254,18 @@
   .program__item-description {
     margin: 0;
     width: 463px;
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
 
   .program__item-link {
-    margin-bottom: 61px;
+    margin-bottom: 0;
   }
 
   .program__item-link--slim::before {
     top: 3px;
     left: 132px;
   }
+
   .program__item-link--pro::before {
     top: 4px;
     left: 126px;

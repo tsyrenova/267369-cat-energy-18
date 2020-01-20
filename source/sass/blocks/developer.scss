@@ -8,6 +8,7 @@
   @include font-main(16px, 16px);
   color: $tundora;
   text-align: left;
+  padding-top: 7px;
 }
 
 .developer__link:hover,
@@ -17,4 +18,49 @@
 
 .developer__link:active {
   color: $greyish-brown-30;
+}
+
+.developer__icon {
+  width: 45px;
+  height: auto;
+  margin-top: -11px;
+  margin-right: -9px;
+}
+
+.developer__link--logo path {
+  fill: $dove-gray;
+}
+
+.developer__link--logo:hover path,
+.developer__link--logo:focus path {
+  fill: $apple;
+}
+
+.developer__link--logo:active path {
+  fill: $apple-30;
+}
+
+@media (min-width: $tablet-width) {
+  .developer {
+    width: 192px;
+    padding-left: 28px;
+    padding-top: 2px;
+  }
+
+  .developer__link {
+    padding-top: 0;
+    margin-right: -2px;
+    margin-bottom: 5px;
+  }
+
+  .developer__icon {
+    margin-right: -7px;
+    margin-top: -11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer {
+    padding-top: 4px;
+  }
 }

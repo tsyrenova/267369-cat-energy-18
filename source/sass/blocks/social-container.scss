@@ -3,6 +3,7 @@
 }
 
 .social-wrapper {
+  position: relative;
   min-height: 62px; //временно
 }
 
@@ -10,18 +11,110 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
+  padding-left: 73px;
+  margin: 0 auto;
+  padding-right: 70px;
+
+  &::before {
+    @include pseudo;
+    left: 0;
+    top: -25px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-border-input;
+  }
+
+  &::after {
+    @include pseudo;
+    left: 0;
+    top: 38px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-border-input;
+  }
 }
 
 .social-wrapper__item {
   width: 22px; //временно
   height: 17px;
-  background-color: salmon;
+}
+
+
+.social-wrapper__link path {
+  fill: $dove-gray;
+}
+
+.social-wrapper__link:hover path,
+.social-wrapper__link:focus path {
+  fill: $apple;
+}
+
+.social-wrapper__link:active path {
+  fill: $apple-30;
+}
+
+.social-wrapper__link:hover .social-wrapper__icon--insta,
+.social-wrapper__link:focus .social-wrapper__icon--insta {
+  fill: $apple;
+}
+
+.social-wrapper__link:active .social-wrapper__icon--insta {
+  fill: $apple-30;
 }
 
 @media (min-width: $tablet-width) {
   .social-container {
-    min-height: 150px; //временно
     display: flex;
     justify-content: space-between;
+    padding-top: 59px;
+    min-height: 145px;
+  }
+
+  .social-wrapper {
+    width: 324px;
+    padding-left: 92px;
+    padding-right: 100px;
+  }
+
+  .social-wrapper__list {
+    @include drop-reset;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .social-wrapper__item {
+    margin-bottom: 5px;
+  }
+
+  .social-wrapper__icon--vk {
+    width: 30px;
+    height: 16px;
+    margin-top: 2px;
+  }
+
+  .social-wrapper__icon--insta {
+    width: 23px;
+    height: 23px;
+    margin-left: 3px;
+    margin-top: -1px;
+  }
+
+  .social-wrapper__icon--fb {
+    width: 14px;
+    height: 28px;
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-container {
+    padding-top: 63px;
+    margin-left: -1px;
   }
 }

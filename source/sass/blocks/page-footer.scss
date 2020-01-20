@@ -9,35 +9,68 @@
   justify-content: space-between;
   background-color: $white;
   min-height: 114px; //временно
-  outline: 1px solid #4c00ff;
+  padding-top: 28px;
 }
 
 .page-footer__logo {
-  min-height: 94px; //временно
+  min-height: 94px;
+  margin-bottom: 23px;
 }
+
+.page-footer__logo-link {
+  display: block;
+  padding-top: 37px;
+  padding-left: 76px;
+}
+
+.page-footer__logo-image:hover path,
+.page-footer__logo-image:focus path {
+  fill: $tundora-80;
+}
+
+.page-footer__logo-image:active path {
+  fill: $tundora-60;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    min-height: 747px;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    width: 192px;
+    margin-bottom: 0;
+    min-height: auto;
   }
 
   .page-footer__wrapper {
-    min-height: 201px; //временно
+    padding-top: 65px;
+    margin-bottom: 57px;
+    background-color: $light-grey;
+  }
+
+  .page-footer__logo-link {
+    margin-bottom: 5px;
+    padding-left: 0;
+    padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    min-height: 550px;
+    min-height: auto;
   }
 
   .page-footer__wrapper {
     position: absolute;
-    top: 0;
+    top: 95px;
     left: 0;
 
     width: 570px;
     min-height: 201px;
+    padding-top: 25px;
 
     background-color: $white;
   }

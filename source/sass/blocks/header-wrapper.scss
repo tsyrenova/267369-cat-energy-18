@@ -5,9 +5,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header-wrapper {
+  .header-wrapper--color {
+    position: relative;
     background-image: linear-gradient(to left, $green 49.5%, white 49.5%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-bottom: 0;
+
+    &::before {
+      @include pseudo;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 696px;
+      width: 55%;
+      height: 696px;
+      top: 0;
+      left: 49.9%;
     }
+  }
 }

@@ -1,6 +1,8 @@
 .gift {
+  position: relative;
   min-height: 289px;
   width: 100%;
+  margin-bottom: 36px;
   background-color: $apple;
 }
 
@@ -8,14 +10,61 @@
   @include font-main(16px, 20px);
   align-items: center;
   color: $white;
-  width: 159px;
+  width: 161px;
 
   margin: 0 auto;
+  padding-top: 123px;
 }
+
+.gift_image {
+  display: block;
+  width: 56px;
+  height: 6px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.gift_image svg {
+  fill: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 200px;
+    margin-bottom: 76px;
+  }
+
+  .gift__text {
+    width: 161px;
+    margin: 0 auto;
+    margin-right: 124px;
+    padding-top: 8px;
+    text-align: left;
+  }
+
+  .gift_image {
+    margin-left: 90px;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .gift {
+    align-self: flex-start;
     width: 245px;
-    min-height: 289px;
+    min-height: auto;
+    margin-top: 116px;
+  }
+
+  .gift_image {
+    margin-left: 95px;
+    padding-bottom: 115px;
+  }
+
+  .gift__text {
+    width: 215px;
+    text-align: center;
+    padding-left: 29px;
+    padding-bottom: 42px;
   }
 }

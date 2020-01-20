@@ -10,9 +10,12 @@
   @include drop-reset;
   @include font-title(16px, 20px);
   text-align: left;
+  width: 327px;
+  margin-right: 5px;
 }
 
 .contact__adress {
+  @include drop-reset;
   @include font-main(14px, 20px);
   text-align: left;
   text-transform: none;
@@ -23,13 +26,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact--color {
+    background-color: $light-grey;
+  }
+
   .contact__title {
     font-size: 20px;
     line-height: 25px;
+    width: 195px;
+    padding-left: 41px;
+    padding-top: 2px;
   }
 
   .contact__adress {
     font-size: 16px;
+    width: 200px;
+    text-align: right;
+    padding-right: 42px;
+  }
+
+  .contact__adress-city {
+    display: block;
+    padding-top: 20px;
   }
 
   .contact__wrapper-map {
@@ -39,11 +57,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+  }
+
   .contact .container {
     position: relative;
   }
 
   .contact__title {
+    width: 269px;
     align-items: left;
+    padding-left: 115px;
+    padding-top: 41px;
+  }
+
+  .contact__adress {
+    width: 205px;
+    text-align: left;
+    padding-top: 38px;
+    padding-right: 46px;
   }
 }
